@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Iceberg&family=Podkova:wght@600&display=swap');
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;;
+}
+.title{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;   
+}
+.title img{
+    height: 100px;
+}
+.title h1{
+    font-family: 'Iceberg', cursive;
+    margin: 0;
+    font-size: 4rem;
+    letter-spacing: 1px;
+    font-weight: 200;
+}
