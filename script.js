@@ -1,1 +1,9 @@
- 
+ var A = document.getElementById("A");
+ var S = document.getElementById("S");
+ var D = document.getElementById("D");
+ var A = document.getElementById("A");
+ var A = document.getElementById("A");
+ var A = document.getElementById("A");
+ var A = document.getElementById("A");
+ var A = document.getElementById("A");
+ var A = document.getElementById("A");
