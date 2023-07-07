@@ -61,3 +61,13 @@ body{
     box-shadow: 0px 0px 11px 1px rgba(148,144,214,1);
     
 }
+.beat-name{
+    width: 100%;
+    margin-top: 190px;
+    text-align: center;
+}
+.desc{
+    font-size: 20px;
+    padding: 0;
+    margin: 0;
+}

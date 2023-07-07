@@ -1,3 +1,5 @@
+const beatName = document.getElementById("beat-name");
+console.log("beatName");
 document.body.addEventListener(
   "keydown",
   (event) => {
@@ -9,7 +11,10 @@ document.body.addEventListener(
       var boom = new Audio("./assets/DrumsetAudioFiles/boom.wav");
       boom.play();
       A.style.scale = "1.1";
-      A.style.boxShadow = "0px 0px 11px 1px rgba(148,144,214,1)";
+      A.style.boxShadow = "0px 0px 11px 1px0 rgba(148,144,214,1)";
+      beatName.innerText = '"boom"';
+      console.log(beatName.innerText);
+
     } 
     
     else if (keyid === 83) {
@@ -19,6 +24,7 @@ document.body.addEventListener(
       clap.play();
       S.style.scale = "1.1";
       S.style.boxShadow = "0px 0px 11px 1px rgba(148,144,214,1)";
+      beatName.innerText = '"clap"';
     } 
     
     else if (keyid === 68) {
@@ -28,6 +34,7 @@ document.body.addEventListener(
       hihat.play();
       D.style.scale = "1.1";
       D.style.boxShadow = "0px 0px 11px 1px rgba(148,144,214,1)";
+      beatName.innerText = '"hihat"';
     }
     
     else if (keyid === 70) {
@@ -37,6 +44,7 @@ document.body.addEventListener(
       kick.play();
       F.style.scale = "1.1";
       F.style.boxShadow = "0px 0px 11px 1px rgba(148,144,214,1)";
+      beatName.innerText = '"kick"';
     } 
     
     else if (keyid === 71) {
@@ -46,6 +54,7 @@ document.body.addEventListener(
       openhat.play();
       G.style.scale = "1.1";
       G.style.boxShadow = "0px 0px 11px 1px rgba(148,144,214,1)";
+      beatName.innerText = '"openhat"';
     }
     
     else if (keyid === 72) {
@@ -55,6 +64,7 @@ document.body.addEventListener(
       ride.play();
       H.style.scale = "1.1";
       H.style.boxShadow = "0px 0px 11px 1px rgba(148,144,214,1)";
+      beatName.innerText = '"ride"';
     }
     
     else if (keyid === 74){
@@ -64,6 +74,7 @@ document.body.addEventListener(
       snare.play();
       J.style.scale = "1.1";
       J.style.boxShadow = "0px 0px 11px 1px rgba(148,144,214,1)";
+      beatName.innerText = '"snare"';
     }
     
     else if (keyid === 75) {
@@ -73,6 +84,7 @@ document.body.addEventListener(
       tink.play();
       K.style.scale = "1.1";
       K.style.boxShadow = "0px 0px 11px 1px rgba(148,144,214,1)";
+      beatName.innerText = '"tink"';
     }
     
     else if (keyid === 76) {
@@ -82,6 +94,7 @@ document.body.addEventListener(
       tom.play();
       L.style.scale = "1.1";
       L.style.boxShadow = "0px 0px 11px 1px rgba(148,144,214,1)";
+      beatName.innerText = '"tom"';
     } else {
       console.log("different key pressed");
     }
@@ -92,6 +105,7 @@ document.body.addEventListener(
 document.body.addEventListener(
     "keyup",
     (event) => {
+
       let keyid = event.keyCode;
       //   console.log(`${event.key}`);
       if (keyid === 65) {
