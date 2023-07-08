@@ -13,8 +13,7 @@ document.body.addEventListener(
       A.style.scale = "1.1";
       A.style.boxShadow = "0px 0px 11px 1px0 rgba(148,144,214,1)";
       beatName.innerText = '"boom"';
-      console.log(beatName.innerText);
-
+      showBeat();
     } 
     
     else if (keyid === 83) {
@@ -25,6 +24,7 @@ document.body.addEventListener(
       S.style.scale = "1.1";
       S.style.boxShadow = "0px 0px 11px 1px rgba(148,144,214,1)";
       beatName.innerText = '"clap"';
+      showBeat();
     } 
     
     else if (keyid === 68) {
@@ -35,6 +35,7 @@ document.body.addEventListener(
       D.style.scale = "1.1";
       D.style.boxShadow = "0px 0px 11px 1px rgba(148,144,214,1)";
       beatName.innerText = '"hihat"';
+      showBeat();
     }
     
     else if (keyid === 70) {
@@ -45,6 +46,7 @@ document.body.addEventListener(
       F.style.scale = "1.1";
       F.style.boxShadow = "0px 0px 11px 1px rgba(148,144,214,1)";
       beatName.innerText = '"kick"';
+      showBeat();
     } 
     
     else if (keyid === 71) {
@@ -55,6 +57,7 @@ document.body.addEventListener(
       G.style.scale = "1.1";
       G.style.boxShadow = "0px 0px 11px 1px rgba(148,144,214,1)";
       beatName.innerText = '"openhat"';
+      showBeat();
     }
     
     else if (keyid === 72) {
@@ -65,6 +68,7 @@ document.body.addEventListener(
       H.style.scale = "1.1";
       H.style.boxShadow = "0px 0px 11px 1px rgba(148,144,214,1)";
       beatName.innerText = '"ride"';
+      showBeat();
     }
     
     else if (keyid === 74){
@@ -75,6 +79,7 @@ document.body.addEventListener(
       J.style.scale = "1.1";
       J.style.boxShadow = "0px 0px 11px 1px rgba(148,144,214,1)";
       beatName.innerText = '"snare"';
+      showBeat();
     }
     
     else if (keyid === 75) {
@@ -85,6 +90,7 @@ document.body.addEventListener(
       K.style.scale = "1.1";
       K.style.boxShadow = "0px 0px 11px 1px rgba(148,144,214,1)";
       beatName.innerText = '"tink"';
+      showBeat();
     }
     
     else if (keyid === 76) {
@@ -95,8 +101,10 @@ document.body.addEventListener(
       L.style.scale = "1.1";
       L.style.boxShadow = "0px 0px 11px 1px rgba(148,144,214,1)";
       beatName.innerText = '"tom"';
+      showBeat()
     } else {
       console.log("different key pressed");
+      showBeat();
     }
   },
   true
@@ -105,7 +113,6 @@ document.body.addEventListener(
 document.body.addEventListener(
     "keyup",
     (event) => {
-
       let keyid = event.keyCode;
       //   console.log(`${event.key}`);
       if (keyid === 65) {
@@ -194,3 +201,10 @@ document.body.addEventListener(
     true
   );
   
+  function showBeat() {
+    setTimeout(function(){
+    beatName.innerText = '"beat"';
+    console.log(beatName.innerText)
+     },3000);
+    
+  }
