@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
+    <script defer src="script.js"></script>
     <title>Drum Kit | Keyboard</title>
 </head>
 <body>
@@ -16,15 +17,15 @@
                 <h1>Drum On Keys</h1>
             </div>
             <div class="key-container">
-                <div id="A" class="key">A</div>
-                <div id="S" class="key">S</div>
-                <div id="D" class="key">D</div>
-                <div id="F" class="key">F</div>
-                <div id="G" class="key">G</div>
-                <div id="H" class="key">H</div>
-                <div id="J" class="key">J</div>
-                <div id="K" class="key">K</div>
-                <div id="L" class="key">L</div>
+                <div onclick="Akey()" id="A" class="key">A</div>
+                <div onclick="Skey()" id="S" class="key">S</div>
+                <div onclick="Dkey()" id="D" class="key">D</div>
+                <div onclick="Fkey()" id="F" class="key">F</div>
+                <div onclick="Gkey()" id="G" class="key">G</div>
+                <div onclick="Hkey()" id="H" class="key">H</div>
+                <div onclick="Jkey()" id="J" class="key">J</div>
+                <div onclick="Kkey()" id="K" class="key">K</div>
+                <div onclick="Lkey()" id="L" class="key">L</div>
             </div>
         </div>
         <div class="beat-name">
@@ -34,6 +35,6 @@
             <p>Type from your Keyboard to make some music! 💜</p>
         </div>
     </div>
-    <script src="script.js"></script>
+
 </body>
 </html>
