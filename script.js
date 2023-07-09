@@ -143,7 +143,6 @@ document.body.addEventListener(
   );
   
   function Akey() {
-  r
     var boom = new Audio("./assets/DrumsetAudioFiles/boom.wav");
     boom.play();
     beatName.innerText = '"boom"';
