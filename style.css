@@ -59,10 +59,6 @@ body{
 #float-img{
     display: none;
 }
-/* .float-img-container img
-{
-    transition: transform 3s cubic-bezier(0.09, 0.09, 0.99, 1.02);
-} */
 .active-img{
     /* transform: translateY(-600px); */
     animation: floatimg 3s cubic-bezier(0.09, 0.09, 0.99, 1.02) ;
@@ -94,6 +90,6 @@ body{
         transform: translateY(-600px);
         display: block;
         opacity: 0;
-        display: none;
+        /* display: none; */
     }
 }

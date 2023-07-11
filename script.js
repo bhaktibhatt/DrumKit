@@ -8,6 +8,7 @@ var H = document.getElementById("H");
 var J = document.getElementById("J");
 var K = document.getElementById("K");
 var L = document.getElementById("L");
+var img = document.getElementById('float-img');
 
 console.log("beatName");
 document.body.addEventListener(
@@ -19,6 +20,7 @@ document.body.addEventListener(
       Akey();
       A.style.scale = "1.1";
       A.style.boxShadow = "0px 0px 11px 1px rgba(148,144,214,1)";
+    floatImg();  
       
     } 
     
@@ -88,6 +90,10 @@ document.body.addEventListener(
         boom.pause();
         A.style.scale = "1";
         A.style.boxShadow = "none";
+        setTimeout(function(){
+          img.style.display="none";
+        },3000)
+
       } 
       
       else if (keyid === 83) {
@@ -165,7 +171,6 @@ document.body.addEventListener(
     boom.play();
     beatName.innerText = '"boom"';
     showBeat(); 
-    floatImg();  
   }
   function Skey() {
    
@@ -230,8 +235,9 @@ document.body.addEventListener(
 
 function floatImg()
 {
- var img = document.getElementById('float-img');
+ var imgCon = document.getElementById('float-c');
   img.style.display="block";
-  img.classList.toggle('active-img')
+  img.classList.add('active-img')
+  // imgCon.style.display="none"
 
 }
