@@ -3,6 +3,7 @@ body{
     margin: 0;
     font-family: 'Podkova';
     background-color: #eeeeee;
+    overflow: hidden;
 }
 .container{
     display: flex;
@@ -52,7 +53,8 @@ body{
     font-size: 30px;
     transition: 0.1s;
 }
-.float-img-container{
+.all-float-container{
+    display: flex;
     height: 100%;
     width: 100%;
 }
@@ -61,7 +63,7 @@ body{
 }
 .active-img{
     /* transform: translateY(-600px); */
-    animation: floatimg 3s cubic-bezier(0.09, 0.09, 0.99, 1.02) ;
+    animation: floatimg 2s cubic-bezier(0.09, 0.09, 0.99, 1.02) ;
 }
 .key:hover{
     scale: 1.1;

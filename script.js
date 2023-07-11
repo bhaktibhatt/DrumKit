@@ -8,7 +8,12 @@ var H = document.getElementById("H");
 var J = document.getElementById("J");
 var K = document.getElementById("K");
 var L = document.getElementById("L");
-var img = document.getElementById('float-img');
+var img1 = document.getElementById('float-img1');
+var img2 = document.getElementById('float-img2');
+var img3 = document.getElementById('float-img3');
+var img4 = document.getElementById('float-img4');
+var img5 = document.getElementById('float-img5');
+var img6 = document.getElementById('float-img6');
 
 console.log("beatName");
 document.body.addEventListener(
@@ -20,7 +25,8 @@ document.body.addEventListener(
       Akey();
       A.style.scale = "1.1";
       A.style.boxShadow = "0px 0px 11px 1px rgba(148,144,214,1)";
-    floatImg();  
+      img1.style.display="block";
+      img1.classList.add('active-img')
       
     } 
     
@@ -28,49 +34,64 @@ document.body.addEventListener(
       Skey();
       S.style.scale = "1.1";
       S.style.boxShadow = "0px 0px 11px 1px rgba(148,144,214,1)";
+      img2.style.display="block";
+      img2.classList.add('active-img')
     } 
     
     else if (keyid === 68) {  
       Dkey()
       D.style.scale = "1.1";
       D.style.boxShadow = "0px 0px 11px 1px rgba(148,144,214,1)";
+      img3.style.display="block";
+      img3.classList.add('active-img')
     }
     
     else if (keyid === 70) {
       Fkey();
       F.style.scale = "1.1";
       F.style.boxShadow = "0px 0px 11px 1px rgba(148,144,214,1)";
+      img4.style.display="block";
+      img4.classList.add('active-img')
     } 
     
     else if (keyid === 71) {
       Gkey();
       G.style.scale = "1.1";
       G.style.boxShadow = "0px 0px 11px 1px rgba(148,144,214,1)";
+      img5.style.display="block";
+      img5.classList.add('active-img')
     }
     
     else if (keyid === 72) {
       Hkey();
       H.style.scale = "1.1";
       H.style.boxShadow = "0px 0px 11px 1px rgba(148,144,214,1)";
+      img6.style.display="block";
+      img6.classList.add('active-img')
     }
     
     else if (keyid === 74){
       Jkey();
       J.style.scale = "1.1";
       J.style.boxShadow = "0px 0px 11px 1px rgba(148,144,214,1)";
-      
+      img5.style.display="block";
+      img5.classList.add('active-img')
     }
     
     else if (keyid === 75) {
       Kkey();
       K.style.scale = "1.1";
       K.style.boxShadow = "0px 0px 11px 1px rgba(148,144,214,1)";
+      img4.style.display="block";
+      img4.classList.add('active-img')
     }
     
     else if (keyid === 76) {
       Lkey();
       L.style.scale = "1.1";
       L.style.boxShadow = "0px 0px 11px 1px rgba(148,144,214,1)";
+      img3.style.display="block";
+      img3.classList.add('active-img')
     } else {
       console.log("different key pressed");
       showBeat();
@@ -91,7 +112,7 @@ document.body.addEventListener(
         A.style.scale = "1";
         A.style.boxShadow = "none";
         setTimeout(function(){
-          img.style.display="none";
+          img1.style.display="none";
         },3000)
 
       } 
@@ -102,6 +123,9 @@ document.body.addEventListener(
         clap.pause();
         S.style.scale = "1";
         S.style.boxShadow = "none";
+        setTimeout(function(){
+          img2.style.display="none";
+        },3000)
       } 
       
       else if (keyid === 68) {
@@ -110,6 +134,9 @@ document.body.addEventListener(
         hihat.pause();
         D.style.scale = "1";
         D.style.boxShadow = "none";
+        setTimeout(function(){
+          img3.style.display="none";
+        },3000)
       }
       
       else if (keyid === 70) {
@@ -118,6 +145,9 @@ document.body.addEventListener(
         kick.pause();
         F.style.scale = "1";
         F.style.boxShadow = "none";
+        setTimeout(function(){
+          img4.style.display="none";
+        },3000)
       } 
       
       else if (keyid === 71) {
@@ -127,6 +157,9 @@ document.body.addEventListener(
         openhat.pause();
         G.style.scale = "1";
         G.style.boxShadow = "none";
+        setTimeout(function(){
+          img5.style.display="none";
+        },3000)
       }
       
       else if (keyid === 72) {
@@ -135,6 +168,9 @@ document.body.addEventListener(
         ride.pause();
         H.style.scale = "1";
         H.style.boxShadow = "none";
+        setTimeout(function(){
+          img6.style.display="none";
+        },3000)
       }
       
       else if (keyid === 74){
@@ -143,6 +179,9 @@ document.body.addEventListener(
         snare.play();
         J.style.scale = "1";
         J.style.boxShadow = "none";
+        setTimeout(function(){
+          img5.style.display="none";
+        },3000)
       }
       
       else if (keyid === 75) {
@@ -151,6 +190,9 @@ document.body.addEventListener(
         tink.pause();
         K.style.scale = "1";
         K.style.boxShadow = "none";
+        setTimeout(function(){
+          img4.style.display="none";
+        },3000)
       }
       
       else if (keyid === 76) {
@@ -159,6 +201,9 @@ document.body.addEventListener(
         tom.pause();
         L.style.scale = "1";
         L.style.boxShadow = "none";
+        setTimeout(function(){
+          img3.style.display="none";
+        },3000)
       } else {
         console.log("different key pressed");
       }
@@ -232,12 +277,3 @@ document.body.addEventListener(
      },3000);
     
   }
-
-function floatImg()
-{
- var imgCon = document.getElementById('float-c');
-  img.style.display="block";
-  img.classList.add('active-img')
-  // imgCon.style.display="none"
-
-}
