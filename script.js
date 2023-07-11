@@ -161,11 +161,11 @@ document.body.addEventListener(
   );
   
   function Akey() {
-
     var boom = new Audio("./assets/DrumsetAudioFiles/boom.wav");
     boom.play();
     beatName.innerText = '"boom"';
-    showBeat();   
+    showBeat(); 
+    floatImg();  
   }
   function Skey() {
    
@@ -228,3 +228,10 @@ document.body.addEventListener(
     
   }
 
+function floatImg()
+{
+ var img = document.getElementById('float-img');
+  img.style.display="block";
+  img.classList.toggle('active-img')
+
+}
